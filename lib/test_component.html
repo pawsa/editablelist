@@ -1,0 +1,19 @@
+<material-dropdown-select
+  [buttonText]="primaryText"
+  [selection]="primary"
+  [options]="allowed">
+    </material-dropdown-select>
+<material-list>
+  <material-list-item *ngFor="let item of items">    
+    {{item.person}}
+    <material-dropdown-select
+      [buttonText]="item.selectedMonth"
+      [selection]="item.selected"
+      [options]="allowed"
+      [(ngModel)]="item.month">
+    </material-dropdown-select>
+  </material-list-item>
+</material-list>
+<material-button
+  raised
+  (trigger)="printItems">Print</material-button>
