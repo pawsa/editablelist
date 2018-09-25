@@ -16,7 +16,7 @@ void main() {
   tearDown(disposeAnyRunningTest);
 
   test('heading', () {
-    expect(fixture.text, contains('Print'));
+    expect(fixture.text, contains('Editable list'));
   });
 
   // Testing info: https://webdev.dartlang.org/angular/guide/testing
