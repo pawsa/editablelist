@@ -6,6 +6,7 @@ import 'dart:collection';
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/laminate/popup/module.dart';
+import 'package:angular_components/material_input/material_input.dart';
 import 'package:angular_components/material_list/material_list.dart';
 import 'package:angular_components/material_list/material_list_item.dart';
 import 'package:angular_components/material_select/material_dropdown_select.dart';
@@ -38,6 +39,7 @@ class Item {
     providers: popupBindings,
     directives: [
       coreDirectives,
+      MaterialInputComponent,
       MaterialDropdownSelectComponent,
     ],
 )
