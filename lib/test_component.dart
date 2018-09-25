@@ -46,7 +46,6 @@ class TestListComponent implements OnInit {
     'January', 'February', 'March', 'April', 'May', 'June'
   ]);
 
-  var items = [Item('A', 'January'), Item('B', 'February')];
   var map = LinkedHashMap<String,Item>();
 
   void ngOnInit() async {

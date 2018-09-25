@@ -1,6 +1,6 @@
-<div>Iterate over list</div>
+<div>Iterate over LinkedHashMap::values - works as expected</div>
 <material-list>
-  <material-list-item *ngFor="let item of items">
+  <material-list-item *ngFor="let item of map.values">
     {{item.person}}:
     <material-dropdown-select
       [buttonText]="item.selectedMonth"
@@ -10,7 +10,7 @@
     </material-dropdown-select>
   </material-list-item>
 </material-list>
-<div>Iterate over LinkedHashMap - dropdown does not become visible on click.</div>
+<div>Iterate over LinkedHashMap:entries - dropdown does not become visible on click.</div>
 <material-list>
   <material-list-item *ngFor="let item of map.entries">
     {{item.value.person}}:
